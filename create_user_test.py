@@ -46,7 +46,7 @@ def negative_assert_symbol(first_name):
     response = sender_stand_request.post_new_user(user_body)
 
     # Проверяется, что код ответа равен 400
-    assert response.status_code == 400c
+    assert response.status_code == 400
 
     # Проверяется, что в теле ответа есть код 400
     assert response.json()["code"] == 400
